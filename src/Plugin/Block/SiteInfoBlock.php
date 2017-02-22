@@ -25,7 +25,7 @@ class SiteInfoBlock extends BlockBase implements BlockPluginInterface {
    */
   public function build() {
     global $base_url;
-    
+
     $config = $this->getConfiguration();
 
     $contact_info = Xss::filterAdmin($config['contact_info']);
